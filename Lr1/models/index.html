@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Models - My WEB labs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Models";
+        var mkdocs_page_input_path = "Lr1\\models.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> My WEB labs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lr1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Home</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Models</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#scheduletaskdefault">ScheduleTaskDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#userdefault">UserDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prioritydefault">PriorityDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#taskdefault">TaskDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#timeentrydefault">TimeEntryDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scheduledefault">ScheduleDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notificationdefault">NotificationDefault</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user">User</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#userinner">UserInner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usercreate">UserCreate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#userlogin">UserLogin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#userjwtresponse">UserJWTResponse</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#userresponse">UserResponse</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#priority">Priority</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#priorityinner">PriorityInner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#task">Task</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#taskinner">TaskInner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#timeentry">TimeEntry</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#timeentryinner">TimeEntryInner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#schedule">Schedule</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scheduleinner">ScheduleInner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notification">Notification</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#notificationinner">NotificationInner</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scheduletask">ScheduleTask</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tests/">Tests</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../auth/">Auth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../db/database_schema/">Database Schema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../db/database_connection/">Database conecton</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >API</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../api/generic/">Generic functions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/users/">Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/users/me/">Auth users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/priorities/">Priorities</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/tasks/">Tasks</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/time_entries/">Time Entries</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/schedules/">Schedules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/notifications/">Notifications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../api/schedule_tasks/">Schedule Tasks</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lr2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr2/">Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr2/task1/">Task 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr2/task2/">Task 2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lr3</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr3/">Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr3/task1/">Task 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr3/task2/">Task 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Lr3/task3/">Task 3</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">My WEB labs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lr1</li>
+      <li class="breadcrumb-item active">Models</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="database-models">Database Models</h1>
+<h2 id="scheduletaskdefault">ScheduleTaskDefault</h2>
+<ul>
+<li><code>schedule_id</code>: Foreign key to Schedule</li>
+<li><code>task_id</code>: Foreign key to Task</li>
+</ul>
+<h2 id="userdefault">UserDefault</h2>
+<ul>
+<li><code>first_name</code>: String</li>
+<li><code>last_name</code>: String</li>
+<li><code>username</code>: String</li>
+<li><code>email</code>: String</li>
+</ul>
+<h2 id="prioritydefault">PriorityDefault</h2>
+<ul>
+<li><code>name</code>: String</li>
+</ul>
+<h2 id="taskdefault">TaskDefault</h2>
+<ul>
+<li><code>description</code>: String</li>
+<li><code>deadline</code>: DateTime</li>
+<li><code>priority_id</code>: Foreign key to Priority</li>
+<li><code>user_id</code>: Foreign key to User</li>
+</ul>
+<h2 id="timeentrydefault">TimeEntryDefault</h2>
+<ul>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>start_time</code>: DateTime</li>
+<li><code>end_time</code>: DateTime</li>
+<li><code>duration</code>: Integer</li>
+</ul>
+<h2 id="scheduledefault">ScheduleDefault</h2>
+<ul>
+<li><code>user_id</code>: Foreign key to User</li>
+<li><code>date</code>: DateTime</li>
+</ul>
+<h2 id="notificationdefault">NotificationDefault</h2>
+<ul>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>message</code>: String</li>
+<li><code>sent_at</code>: DateTime</li>
+</ul>
+<h2 id="user">User</h2>
+<ul>
+<li><code>id</code>: Primary key</li>
+<li><code>first_name</code>: String</li>
+<li><code>last_name</code>: String</li>
+<li><code>username</code>: String</li>
+<li><code>password_hash</code>: String</li>
+<li><code>email</code>: String</li>
+<li><code>tasks</code>: Relationship with Task</li>
+<li><code>schedules</code>: Relationship with Schedule</li>
+</ul>
+<h2 id="userinner">UserInner</h2>
+<ul>
+<li><code>username</code>: String</li>
+<li><code>email</code>: String</li>
+<li><code>tasks</code>: List of Task</li>
+<li><code>schedules</code>: List of Schedule</li>
+</ul>
+<h2 id="usercreate">UserCreate</h2>
+<ul>
+<li><code>first_name</code>: String</li>
+<li><code>last_name</code>: String</li>
+<li><code>username</code>: String</li>
+<li><code>email</code>: String</li>
+<li><code>password</code>: String</li>
+</ul>
+<h2 id="userlogin">UserLogin</h2>
+<ul>
+<li><code>username</code>: String</li>
+<li><code>password</code>: String</li>
+</ul>
+<h2 id="userjwtresponse">UserJWTResponse</h2>
+<ul>
+<li><code>first_name</code>: String</li>
+<li><code>last_name</code>: String</li>
+<li><code>username</code>: String</li>
+<li><code>email</code>: String</li>
+<li><code>password</code>: String</li>
+<li><code>access_token</code>: String</li>
+</ul>
+<h2 id="userresponse">UserResponse</h2>
+<ul>
+<li><code>first_name</code>: String</li>
+<li><code>last_name</code>: String</li>
+<li><code>username</code>: String</li>
+<li><code>email</code>: String</li>
+</ul>
+<h2 id="priority">Priority</h2>
+<ul>
+<li><code>id</code>: Primary key</li>
+<li><code>name</code>: String</li>
+<li><code>tasks</code>: Relationship with Task</li>
+</ul>
+<h2 id="priorityinner">PriorityInner</h2>
+<ul>
+<li><code>name</code>: String</li>
+<li><code>tasks</code>: List of Task</li>
+</ul>
+<h2 id="task">Task</h2>
+<ul>
+<li><code>id</code>: Primary key</li>
+<li><code>description</code>: String</li>
+<li><code>deadline</code>: DateTime</li>
+<li><code>priority_id</code>: Foreign key to Priority</li>
+<li><code>user_id</code>: Foreign key to User</li>
+<li><code>priority</code>: Relationship with Priority</li>
+<li><code>user</code>: Relationship with User</li>
+<li><code>time_entries</code>: Relationship with TimeEntry</li>
+<li><code>notifications</code>: Relationship with Notification</li>
+<li><code>schedules</code>: Relationship with Schedule through ScheduleTask</li>
+</ul>
+<h2 id="taskinner">TaskInner</h2>
+<ul>
+<li><code>description</code>: String</li>
+<li><code>deadline</code>: DateTime</li>
+<li><code>priority_id</code>: Foreign key to Priority</li>
+<li><code>user_id</code>: Foreign key to User</li>
+<li><code>priority</code>: Priority</li>
+<li><code>user</code>: List of User</li>
+<li><code>time_entries</code>: List of TimeEntry</li>
+<li><code>notifications</code>: List of Notification</li>
+<li><code>schedules</code>: List of Schedule</li>
+</ul>
+<h2 id="timeentry">TimeEntry</h2>
+<ul>
+<li><code>id</code>: Primary key</li>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>start_time</code>: DateTime</li>
+<li><code>end_time</code>: DateTime</li>
+<li><code>duration</code>: Integer</li>
+<li><code>task</code>: Relationship with Task</li>
+</ul>
+<h2 id="timeentryinner">TimeEntryInner</h2>
+<ul>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>start_time</code>: DateTime</li>
+<li><code>end_time</code>: DateTime</li>
+<li><code>duration</code>: Integer</li>
+<li><code>task</code>: Task</li>
+</ul>
+<h2 id="schedule">Schedule</h2>
+<ul>
+<li><code>id</code>: Primary key</li>
+<li><code>user_id</code>: Foreign key to User</li>
+<li><code>date</code>: DateTime</li>
+<li><code>user</code>: Relationship with User</li>
+<li><code>tasks</code>: Relationship with Task through ScheduleTask</li>
+</ul>
+<h2 id="scheduleinner">ScheduleInner</h2>
+<ul>
+<li><code>user_id</code>: Foreign key to User</li>
+<li><code>date</code>: DateTime</li>
+<li><code>user</code>: User</li>
+<li><code>tasks</code>: List of Task</li>
+</ul>
+<h2 id="notification">Notification</h2>
+<ul>
+<li><code>id</code>: Primary key</li>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>message</code>: String</li>
+<li><code>sent_at</code>: DateTime</li>
+<li><code>task</code>: Relationship with Task</li>
+</ul>
+<h2 id="notificationinner">NotificationInner</h2>
+<ul>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>message</code>: String</li>
+<li><code>sent_at</code>: DateTime</li>
+<li><code>task</code>: Task</li>
+</ul>
+<h2 id="scheduletask">ScheduleTask</h2>
+<ul>
+<li><code>schedule_id</code>: Foreign key to Schedule</li>
+<li><code>task_id</code>: Foreign key to Task</li>
+<li><code>added_at</code>: DateTime</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tests/" class="btn btn-neutral float-right" title="Tests">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tests/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Generic functions - My WEB labs</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Generic functions";
+        var mkdocs_page_input_path = "Lr1\\api\\generic.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> My WEB labs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lr1</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../models/">Models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../tests/">Tests</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../auth/">Auth</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Database</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../db/database_schema/">Database Schema</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../db/database_connection/">Database conecton</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >API</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Generic functions</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#classes">Classes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#code">Code</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../users/">Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../users/me/">Auth users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../priorities/">Priorities</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../tasks/">Tasks</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../time_entries/">Time Entries</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../schedules/">Schedules</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../notifications/">Notifications</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../schedule_tasks/">Schedule Tasks</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lr2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr2/">Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr2/task1/">Task 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr2/task2/">Task 2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Lr3</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr3/">Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr3/task1/">Task 1</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr3/task2/">Task 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../Lr3/task3/">Task 3</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">My WEB labs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Lr1</li>
+          <li class="breadcrumb-item">API</li>
+      <li class="breadcrumb-item active">Generic functions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="genericpy">generic.py</h1>
+<p>The <code>generic.py</code> file contains generic functions for performing CRUD (Create, Read, Update, Delete) operations on database objects. These functions are designed to work with SQLModel and FastAPI to provide a flexible and reusable way to interact with different models in the database.</p>
+<h2 id="functions">Functions</h2>
+<ul>
+<li><code>create_object(session: Session, input_model: InputModel, output_model: Type[OutputModel]) -&gt; Response[OutputModel]</code></li>
+<li>
+<p>Creates a new object in the database.</p>
+</li>
+<li>
+<p><code>read_object_list(session: Session, output_model: Type[OutputModel]) -&gt; list[OutputModel]</code></p>
+</li>
+<li>
+<p>Retrieves a list of all objects from the database.</p>
+</li>
+<li>
+<p><code>read_object(session: Session, id: int, output_model: Type[OutputModel]) -&gt; OutputModel</code></p>
+</li>
+<li>
+<p>Retrieves a single object by its ID from the database.</p>
+</li>
+<li>
+<p><code>update_object(session: Session, id: int, input_model: InputModel, output_model: Type[OutputModel]) -&gt; InputModel</code></p>
+</li>
+<li>
+<p>Updates an existing object in the database by its ID.</p>
+</li>
+<li>
+<p><code>delete_object(session: Session, id: int, output_model: Type[OutputModel]) -&gt; dict</code></p>
+</li>
+<li>Deletes an object by its ID from the database.</li>
+</ul>
+<h2 id="classes">Classes</h2>
+<ul>
+<li><code>Response(TypedDict, Generic[OutputModel])</code></li>
+<li>A generic response class used to standardize API responses.</li>
+</ul>
+<h2 id="code">Code</h2>
+<pre><code class="language-python">from typing import Generic, Type, TypedDict
+from fastapi import HTTPException
+from sqlmodel import Session, select
+
+from models.default import InputModel, OutputModel
+
+class Response(TypedDict, Generic[OutputModel]):
+    status: int
+    data: OutputModel
+
+def create_object(session: Session, input_model: InputModel, output_model: Type[OutputModel]) -&gt; Response[OutputModel]:
+    output_instance = output_model.model_validate(input_model)
+    session.add(output_instance)
+    session.commit()
+    session.refresh(output_instance)
+    return {&quot;status&quot;: 201, &quot;data&quot;: output_instance}
+
+def read_object_list(session: Session, output_model: Type[OutputModel]) -&gt; list[OutputModel]:
+    return session.exec(select(output_model)).all()
+
+def read_object(session: Session, id: int, output_model: Type[OutputModel]) -&gt; OutputModel:
+    output_instance = session.get(output_model, id)
+    if not output_instance:
+        raise HTTPException(status_code=404, detail=f&quot;{output_model.__name__} not found&quot;)
+    return output_instance
+
+def update_object(session: Session, id: int, input_model: InputModel, output_model: Type[OutputModel]) -&gt; InputModel:
+    output_instance = session.get(output_model, id)
+    if not output_instance:
+        raise HTTPException(status_code=404, detail=f&quot;{output_model.__name__} not found&quot;)
+    output_data = input_model.model_dump(exclude_unset=True)
+    for key, value in output_data.items():
+        setattr(output_instance, key, value)
+    session.add(output_instance)
+    session.commit()
+    session.refresh(output_instance)
+    return output_instance
+
+def delete_object(session: Session, id: int, output_model: Type[OutputModel]) -&gt; dict:
+    output_instance = session.get(output_model, id)
+    if not output_instance:
+        raise HTTPException(status_code=404, detail=f&quot;{output_model.__name__} not found&quot;)
+    session.delete(output_instance)
+    session.commit()
+    return {&quot;ok&quot;: True}
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../db/database_connection/" class="btn btn-neutral float-left" title="Database conecton"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../users/" class="btn btn-neutral float-right" title="Users">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../db/database_connection/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../users/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
